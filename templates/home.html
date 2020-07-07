@@ -1,0 +1,42 @@
+  
+{% extends 'base.html' %}
+
+{% block content %}
+</br>
+<h3><mark>Fill the details and click Submit to get the results for auto-access</mark></h3>
+</br>
+<div class= "container-fluid">
+    <form method='post' action='/submitRequest'>
+
+      <table id="dtExample" class="table table-striped table-bordered table-hovertable" style="width:70%" align="center">
+        <thead class = "thead">
+      
+      <tr>
+        <th scope = "col">RESOURCE</th>
+        <th scope = "col">Manager Id</th>
+        <th scope = "col">ROLE_ROLLUP_1</th>
+        <th scope = "col">ROLE_ROLLUP_2</th>
+        <th scope = "col">ROLE_DEPTNAME</th>
+        <th scope = "col">ROLE_TITLE</th>
+        <th scope = "col">ROLE_FAMILY_DESC</th>
+        <th scope = "col">ROLE_CODE</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><input type="text" id="RESOURCE" name="RESOURCE" placeholder={{data.RESOURCE}}></input></td>
+        <td><input type="text" id="MGR_ID" name="MGR_ID" placeholder={{data.MGR_ID}}></input></td>
+        <td><input type="text" id="ROLE_ROLLUP_1" name="ROLE_ROLLUP_1" placeholder={{data.ROLE_ROLLUP_1}}></input></td>
+        <td><input type="text" id="ROLE_ROLLUP_2" name="ROLE_ROLLUP_2" placeholder={{data.ROLE_ROLLUP_2}}></input></td>
+        <td><input type="text" id="ROLE_DEPTNAME" name="ROLE_DEPTNAME" placeholder={{data.ROLE_DEPTNAME}}></input></td>
+        <td><input type="text" id="ROLE_TITLE" name="ROLE_TITLE" placeholder={{data.ROLE_TITLE}}></input></td>
+        <td><input type="text" id="ROLE_FAMILY_DESC" name="ROLE_FAMILY_DESC" placeholder={{data.ROLE_FAMILY_DESC}}></input></td>
+        <td><input type="text" id="ROLE_CODE" name="ROLE_CODE" placeholder={{data.ROLE_CODE}}></input></td>
+      </tr>
+      <th colspan= "9"><button type="submit" >Submit</button></th>
+    </form>
+
+    </tbody>
+  </table>
+</div>
+{% endblock content %}

@@ -1,0 +1,943 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Life</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700, 900|Vollkorn:400i" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/icomoon/style.css')}}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery-ui.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/owl.theme.default.min.css')}}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/jquery.fancybox.min.css')}}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap-datepicker.css')}}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='fonts/flaticon/font/flaticon.css')}}">
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/aos.css')}}">
+
+    
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300" id="home-section">
+  
+
+  <div id="overlayer"></div>
+  <div class="loader">
+    <div class="spinner-border text-primary" role="status">
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+
+
+  <div class="site-wrap">
+
+    <div class="site-mobile-menu site-navbar-target">
+      <div class="site-mobile-menu-header">
+        <div class="site-mobile-menu-close mt-3">
+          <span class="icon-close2 js-menu-toggle"></span>
+        </div>
+      </div>
+      <div class="site-mobile-menu-body"></div>
+    </div>
+   
+    
+    <header class="site-navbar js-sticky-header site-navbar-target" role="banner" >
+
+      <div class="container">
+        <div class="row align-items-center">
+          
+          <div class="col-6 col-xl-2">
+            <h1 class="mb-0 site-logo"><a href="index.html" class="h2 mb-0"><strong>PET</strong>Life<span class="text-primary">.</span> </a></h1>
+          </div>
+
+          <div class="col-12 col-md-10 d-none d-xl-block">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+
+              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
+                <li><a href="#home-section" class="nav-link">Home</a></li>
+                <li><a href="#about-section" class="nav-link">About</a></li>
+				<li><a href="#checkbreed-section" class="nav-link">Check Breed</a></li>
+                <li><a href="#trainers-section" class="nav-link">Doctor near me</a></li>
+                <li><a href="#pricing-section" class="nav-link">Pricing</a></li>
+                <li><a href="#blog-section" class="nav-link">Blog</a></li>
+                <li><a href="#services-section" class="nav-link">Services</a></li>
+                <li><a href="#contact-section" class="nav-link">Contact</a></li>
+              </ul>
+            </nav>
+          </div>
+
+
+          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
+
+        </div>
+      </div>
+      
+    </header>
+
+  
+    <section class="site-blocks-cover overflow-hidden bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 mr-auto align-self-center text-center text-md-left">
+            <div class="intro-text">
+              <h1>We all love Pets! </h1>
+				<p class="mb-4">“Love comes in fur and paws, too.”  ― Anthony T. Hincks​</p>
+			  <p class="mb-4">“In ancient times cats were worshipped as gods; they have not forgotten this.” - Terry Pratchett</p>
+              <p><a href="#contact-section" class="btn btn-primary">Get In Touch</a></p>
+            </div>
+          </div>
+          <div class="col-md-5 align-self-center text-center text-md-right">
+            <img src="{{url_for('static', filename='images/dog_1.jpg')}}" alt="Image" class="img-fluid cover-img">
+            <img src="{{url_for('static', filename='images/dog_2.jpg')}}" alt="Image" class="img-fluid cover-img2">
+          </div>
+        </div>
+      </div>
+    </section> 
+	 
+
+    <section class="site-section" id="about-section">
+      <div class="container">
+        <div class="row justify-content-center" data-aos="fade-up">
+          <div class="col-lg-6 text-center heading-section mb-5">
+            
+            <h2 class="text-black mb-2">Welcome To Our Website What your pet needs, is Us!</h2>
+            <p>From pet products, pet supplies and pet foods, from grooming, to training and vet services, this is your one stop destination.</p>
+          </div>
+        </div>
+
+        <div class="row hover-1-wrap mb-5 mb-lg-0">
+          <div class="col-12">
+            <div class="row">
+              <div class="mb-4 mb-lg-0 col-lg-6 order-lg-2" data-aos="fade-left">
+                <a href="#" class="rotate10">
+                  <img src="{{url_for('static', filename='images/dog_3.jpg')}}" alt="Image" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-lg-5 mr-auto text-lg-right align-self-center order-lg-1" data-aos="fade-right">
+                <h2 class="text-black">Products and Mordern Equipment</h2>
+               <div class="list-group">
+  <a href="#" class="list-group-item list-group-item-action">
+    Food
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">Toys</a>
+  <a href="#" class="list-group-item list-group-item-action">Dental Treat</a>
+  <a href="#" class="list-group-item list-group-item-action">Apparels</a>
+  <a href="#" class="list-group-item list-group-item-action disabled">Bed and Bedding</a>
+
+</div>
+               
+			   <form method="get" action="./check_breed.html">
+				<button type="submit" class="btn btn-primary btn-sm">Load More</button>
+			</form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row hover-1-wrap mb-5 mb-lg-0">
+          <div class="col-12">
+            <div class="row">
+              <div class="mb-4 mb-lg-0 col-lg-6"  data-aos="fade-right">
+                <a href="#" class="rotate-reverse10">
+                  <img src="{{url_for('static', filename='images/dog_4.jpg')}}" alt="Image" class="img-fluid">
+                </a>
+              </div>
+              <div class="col-lg-5 ml-auto align-self-center"  data-aos="fade-left">
+                <h2 class="text-black">Services</h2>
+                 <div class="list-group">
+				  
+ 
+  <a href="#" class="list-group-item list-group-item-action">
+    Grooming
+  </a>
+  <a href="#" class="list-group-item list-group-item-action">Veterinary Services
+</a>
+  <a href="#" class="list-group-item list-group-item-action"> Pet Sitting
+</a>
+  <a href="#" class="list-group-item list-group-item-action">Pet Walking</a>
+  <a href="#" class="list-group-item list-group-item-action disabled">Adoptions</a>
+    <a href="#" class="list-group-item list-group-item-action disabled">Pet Insurance</a>
+  <a href="#" class="list-group-item list-group-item-action disabled">Curbside Pick-Up</a>
+
+
+</div>
+               
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+	
+
+	<section class="site-section bg-dark trainers" id="checkbreed-section">
+	
+		<div class="container">
+			<div class="row no-gutters">
+				<div class="container">
+				<h1>Upload a picture of a Cat or a Dog and check its breed and characteristics</h1>
+					<script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+		     
+					<form action="/checkbreed" method="POST" enctype="multipart/form-data">
+
+					<div class="file-upload">
+						<center><button class="file-upload-btn btn btn-primary btn-sm" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Add Image</button></center>
+
+						  <div class="image-upload-wrap">
+							<input class="file-upload-input" type='file' name="file" onchange="readURL(this);" accept="image/*" />
+							<div class="drag-text">
+							  <h3>Drag and drop a file or select add Image</h3>
+							</div>
+						  </div>
+						  <div class="file-upload-content">
+							<img class="file-upload-image" src="#" alt="your image" id="mycanvas" />
+							<div class="image-title-wrap">
+
+							  <center><button type="button" onclick="removeUpload()" class="remove-image btn btn-primary btn-sm">Remove <span class="image-title">Uploaded Image</span></button>
+									<button type="submit"  id= "checkbreed" class="remove-image btn btn-primary btn-sm">Check Breed </button></center>
+							</div>
+						  </div>
+					</div>
+
+					</form>
+					
+
+
+				</div>
+			</div>
+		</div>
+		<div>
+		
+		</div>
+	</section>
+
+    <section class="site-section bg-light trainers" id="trainers-section">
+      <div class="container">
+        <div class="row">
+         
+          <div class="col-md-6" data-aos="fade-right">
+            <img class="img-fluid border10 rotate-reverse10" src="{{url_for('static', filename='images/dog_doctor.jpg')}}" alt="Image">
+          </div>
+          <div class="col-md-5 ml-auto align-self-center" data-aos="fade-left">
+            <h2 class="mb-2 heading mb-4">Find your pet  <strong>Veterenarian  </strong></h2>
+            
+<div class="container">
+	<div class="row">
+		 <form class="form-horizontal">
+            <fieldset>
+                <!-- Address form -->
+                 
+                <!-- full-name input-->
+                <div class="control-group">
+                    <label class="control-label">Full Name</label>
+                    <div class="controls">
+                        <input id="full-name" name="full-name" type="text" placeholder="full name"
+                        class="input-xlarge">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+                <!-- address-line1 input-->
+                <div class="control-group">
+                    <label class="control-label">Address Line 1</label>
+                    <div class="controls">
+                        <input id="address-line1" name="address-line1" type="text" placeholder="address line 1"
+                        class="input-xlarge">
+                        <p class="help-block">Street address, P.O. box, company name, c/o</p>
+                    </div>
+                </div>
+                <!-- address-line2 input-->
+                <div class="control-group">
+                    <label class="control-label">Address Line 2</label>
+                    <div class="controls">
+                        <input id="address-line2" name="address-line2" type="text" placeholder="address line 2"
+                        class="input-xlarge">
+                        <p class="help-block">Apartment, suite , unit, building, floor, etc.</p>
+                    </div>
+                </div>
+                <!-- city input-->
+                <div class="control-group">
+                    <label class="control-label">City / Town</label>
+                    <div class="controls">
+                        <input id="city" name="city" type="text" placeholder="city" class="input-xlarge">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+                <!-- region input-->
+                <div class="control-group">
+                    <label class="control-label">State / Province / Region</label>
+                    <div class="controls">
+                        <input id="region" name="region" type="text" placeholder="state / province / region"
+                        class="input-xlarge">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+                <!-- postal-code input-->
+                <div class="control-group">
+                    <label class="control-label">Zip / Postal Code</label>
+                    <div class="controls">
+                        <input id="postal-code" name="postal-code" type="text" placeholder="zip or postal code"
+                        class="input-xlarge">
+                        <p class="help-block"></p>
+                    </div>
+                </div>
+                <!-- country select -->
+                <div class="control-group">
+                    <label class="control-label">Country</label>
+                    <div class="controls">
+                        <select id="country" name="country" class="input-xlarge">
+                            <option value="" selected="selected">(please select a country)</option>
+                            <option value="AF">Afghanistan</option>
+                            <option value="AL">Albania</option>
+                            <option value="DZ">Algeria</option>
+                            <option value="AS">American Samoa</option>
+                            <option value="AD">Andorra</option>
+                            <option value="AO">Angola</option>
+                            <option value="AI">Anguilla</option>
+                            <option value="AQ">Antarctica</option>
+                            <option value="AG">Antigua and Barbuda</option>
+                            <option value="AR">Argentina</option>
+                            <option value="AM">Armenia</option>
+                            <option value="AW">Aruba</option>
+                            <option value="AU">Australia</option>
+                            <option value="AT">Austria</option>
+                            <option value="AZ">Azerbaijan</option>
+                            <option value="BS">Bahamas</option>
+                            <option value="BH">Bahrain</option>
+                            <option value="BD">Bangladesh</option>
+                            <option value="BB">Barbados</option>
+                            <option value="BY">Belarus</option>
+                            <option value="BE">Belgium</option>
+                            <option value="BZ">Belize</option>
+                            <option value="BJ">Benin</option>
+                            <option value="BM">Bermuda</option>
+                            <option value="BT">Bhutan</option>
+                            <option value="BO">Bolivia</option>
+                            <option value="BA">Bosnia and Herzegowina</option>
+                            <option value="BW">Botswana</option>
+                            <option value="BV">Bouvet Island</option>
+                            <option value="BR">Brazil</option>
+                            <option value="IO">British Indian Ocean Territory</option>
+                            <option value="BN">Brunei Darussalam</option>
+                            <option value="BG">Bulgaria</option>
+                            <option value="BF">Burkina Faso</option>
+                            <option value="BI">Burundi</option>
+                            <option value="KH">Cambodia</option>
+                            <option value="CM">Cameroon</option>
+                            <option value="CA">Canada</option>
+                            <option value="CV">Cape Verde</option>
+                            <option value="KY">Cayman Islands</option>
+                            <option value="CF">Central African Republic</option>
+                            <option value="TD">Chad</option>
+                            <option value="CL">Chile</option>
+                            <option value="CN">China</option>
+                            <option value="CX">Christmas Island</option>
+                            <option value="CC">Cocos (Keeling) Islands</option>
+                            <option value="CO">Colombia</option>
+                            <option value="KM">Comoros</option>
+                            <option value="CG">Congo</option>
+                            <option value="CD">Congo, the Democratic Republic of the</option>
+                            <option value="CK">Cook Islands</option>
+                            <option value="CR">Costa Rica</option>
+                            <option value="CI">Cote d'Ivoire</option>
+                            <option value="HR">Croatia (Hrvatska)</option>
+                            <option value="CU">Cuba</option>
+                            <option value="CY">Cyprus</option>
+                            <option value="CZ">Czech Republic</option>
+                            <option value="DK">Denmark</option>
+                            <option value="DJ">Djibouti</option>
+                            <option value="DM">Dominica</option>
+                            <option value="DO">Dominican Republic</option>
+                            <option value="TP">East Timor</option>
+                            <option value="EC">Ecuador</option>
+                            <option value="EG">Egypt</option>
+                            <option value="SV">El Salvador</option>
+                            <option value="GQ">Equatorial Guinea</option>
+                            <option value="ER">Eritrea</option>
+                            <option value="EE">Estonia</option>
+                            <option value="ET">Ethiopia</option>
+                            <option value="FK">Falkland Islands (Malvinas)</option>
+                            <option value="FO">Faroe Islands</option>
+                            <option value="FJ">Fiji</option>
+                            <option value="FI">Finland</option>
+                            <option value="FR">France</option>
+                            <option value="FX">France, Metropolitan</option>
+                            <option value="GF">French Guiana</option>
+                            <option value="PF">French Polynesia</option>
+                            <option value="TF">French Southern Territories</option>
+                            <option value="GA">Gabon</option>
+                            <option value="GM">Gambia</option>
+                            <option value="GE">Georgia</option>
+                            <option value="DE">Germany</option>
+                            <option value="GH">Ghana</option>
+                            <option value="GI">Gibraltar</option>
+                            <option value="GR">Greece</option>
+                            <option value="GL">Greenland</option>
+                            <option value="GD">Grenada</option>
+                            <option value="GP">Guadeloupe</option>
+                            <option value="GU">Guam</option>
+                            <option value="GT">Guatemala</option>
+                            <option value="GN">Guinea</option>
+                            <option value="GW">Guinea-Bissau</option>
+                            <option value="GY">Guyana</option>
+                            <option value="HT">Haiti</option>
+                            <option value="HM">Heard and Mc Donald Islands</option>
+                            <option value="VA">Holy See (Vatican City State)</option>
+                            <option value="HN">Honduras</option>
+                            <option value="HK">Hong Kong</option>
+                            <option value="HU">Hungary</option>
+                            <option value="IS">Iceland</option>
+                            <option value="IN">India</option>
+                            <option value="ID">Indonesia</option>
+                            <option value="IR">Iran (Islamic Republic of)</option>
+                            <option value="IQ">Iraq</option>
+                            <option value="IE">Ireland</option>
+                            <option value="IL">Israel</option>
+                            <option value="IT">Italy</option>
+                            <option value="JM">Jamaica</option>
+                            <option value="JP">Japan</option>
+                            <option value="JO">Jordan</option>
+                            <option value="KZ">Kazakhstan</option>
+                            <option value="KE">Kenya</option>
+                            <option value="KI">Kiribati</option>
+                            <option value="KP">Korea, Democratic People's Republic of</option>
+                            <option value="KR">Korea, Republic of</option>
+                            <option value="KW">Kuwait</option>
+                            <option value="KG">Kyrgyzstan</option>
+                            <option value="LA">Lao People's Democratic Republic</option>
+                            <option value="LV">Latvia</option>
+                            <option value="LB">Lebanon</option>
+                            <option value="LS">Lesotho</option>
+                            <option value="LR">Liberia</option>
+                            <option value="LY">Libyan Arab Jamahiriya</option>
+                            <option value="LI">Liechtenstein</option>
+                            <option value="LT">Lithuania</option>
+                            <option value="LU">Luxembourg</option>
+                            <option value="MO">Macau</option>
+                            <option value="MK">Macedonia, The Former Yugoslav Republic of</option>
+                            <option value="MG">Madagascar</option>
+                            <option value="MW">Malawi</option>
+                            <option value="MY">Malaysia</option>
+                            <option value="MV">Maldives</option>
+                            <option value="ML">Mali</option>
+                            <option value="MT">Malta</option>
+                            <option value="MH">Marshall Islands</option>
+                            <option value="MQ">Martinique</option>
+                            <option value="MR">Mauritania</option>
+                            <option value="MU">Mauritius</option>
+                            <option value="YT">Mayotte</option>
+                            <option value="MX">Mexico</option>
+                            <option value="FM">Micronesia, Federated States of</option>
+                            <option value="MD">Moldova, Republic of</option>
+                            <option value="MC">Monaco</option>
+                            <option value="MN">Mongolia</option>
+                            <option value="MS">Montserrat</option>
+                            <option value="MA">Morocco</option>
+                            <option value="MZ">Mozambique</option>
+                            <option value="MM">Myanmar</option>
+                            <option value="NA">Namibia</option>
+                            <option value="NR">Nauru</option>
+                            <option value="NP">Nepal</option>
+                            <option value="NL">Netherlands</option>
+                            <option value="AN">Netherlands Antilles</option>
+                            <option value="NC">New Caledonia</option>
+                            <option value="NZ">New Zealand</option>
+                            <option value="NI">Nicaragua</option>
+                            <option value="NE">Niger</option>
+                            <option value="NG">Nigeria</option>
+                            <option value="NU">Niue</option>
+                            <option value="NF">Norfolk Island</option>
+                            <option value="MP">Northern Mariana Islands</option>
+                            <option value="NO">Norway</option>
+                            <option value="OM">Oman</option>
+                            <option value="PK">Pakistan</option>
+                            <option value="PW">Palau</option>
+                            <option value="PA">Panama</option>
+                            <option value="PG">Papua New Guinea</option>
+                            <option value="PY">Paraguay</option>
+                            <option value="PE">Peru</option>
+                            <option value="PH">Philippines</option>
+                            <option value="PN">Pitcairn</option>
+                            <option value="PL">Poland</option>
+                            <option value="PT">Portugal</option>
+                            <option value="PR">Puerto Rico</option>
+                            <option value="QA">Qatar</option>
+                            <option value="RE">Reunion</option>
+                            <option value="RO">Romania</option>
+                            <option value="RU">Russian Federation</option>
+                            <option value="RW">Rwanda</option>
+                            <option value="KN">Saint Kitts and Nevis</option>
+                            <option value="LC">Saint LUCIA</option>
+                            <option value="VC">Saint Vincent and the Grenadines</option>
+                            <option value="WS">Samoa</option>
+                            <option value="SM">San Marino</option>
+                            <option value="ST">Sao Tome and Principe</option>
+                            <option value="SA">Saudi Arabia</option>
+                            <option value="SN">Senegal</option>
+                            <option value="SC">Seychelles</option>
+                            <option value="SL">Sierra Leone</option>
+                            <option value="SG">Singapore</option>
+                            <option value="SK">Slovakia (Slovak Republic)</option>
+                            <option value="SI">Slovenia</option>
+                            <option value="SB">Solomon Islands</option>
+                            <option value="SO">Somalia</option>
+                            <option value="ZA">South Africa</option>
+                            <option value="GS">South Georgia and the South Sandwich Islands</option>
+                            <option value="ES">Spain</option>
+                            <option value="LK">Sri Lanka</option>
+                            <option value="SH">St. Helena</option>
+                            <option value="PM">St. Pierre and Miquelon</option>
+                            <option value="SD">Sudan</option>
+                            <option value="SR">Suriname</option>
+                            <option value="SJ">Svalbard and Jan Mayen Islands</option>
+                            <option value="SZ">Swaziland</option>
+                            <option value="SE">Sweden</option>
+                            <option value="CH">Switzerland</option>
+                            <option value="SY">Syrian Arab Republic</option>
+                            <option value="TW">Taiwan, Province of China</option>
+                            <option value="TJ">Tajikistan</option>
+                            <option value="TZ">Tanzania, United Republic of</option>
+                            <option value="TH">Thailand</option>
+                            <option value="TG">Togo</option>
+                            <option value="TK">Tokelau</option>
+                            <option value="TO">Tonga</option>
+                            <option value="TT">Trinidad and Tobago</option>
+                            <option value="TN">Tunisia</option>
+                            <option value="TR">Turkey</option>
+                            <option value="TM">Turkmenistan</option>
+                            <option value="TC">Turks and Caicos Islands</option>
+                            <option value="TV">Tuvalu</option>
+                            <option value="UG">Uganda</option>
+                            <option value="UA">Ukraine</option>
+                            <option value="AE">United Arab Emirates</option>
+                            <option value="GB">United Kingdom</option>
+                            <option value="US">United States</option>
+                            <option value="UM">United States Minor Outlying Islands</option>
+                            <option value="UY">Uruguay</option>
+                            <option value="UZ">Uzbekistan</option>
+                            <option value="VU">Vanuatu</option>
+                            <option value="VE">Venezuela</option>
+                            <option value="VN">Viet Nam</option>
+                            <option value="VG">Virgin Islands (British)</option>
+                            <option value="VI">Virgin Islands (U.S.)</option>
+                            <option value="WF">Wallis and Futuna Islands</option>
+                            <option value="EH">Western Sahara</option>
+                            <option value="YE">Yemen</option>
+                            <option value="YU">Yugoslavia</option>
+                            <option value="ZM">Zambia</option>
+                            <option value="ZW">Zimbabwe</option>
+                        </select>
+                    </div>
+                </div>
+            </fieldset>
+			
+				<button type="submit" class="btn btn-primary btn-sm">Search</button>
+        </form>
+	</div>
+</div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="site-section" id="pricing-section">
+      <div class="container">
+        <div class="row justify-content-center" data-aos="fade-up">
+          <div class="col-lg-7 text-center heading-section mb-5">
+            
+            <h2 class="mb-2 text-black heading">Pricing Table</h2>
+            <p>Our plans and packages.</p>
+          </div>
+        </div>
+        <div class="row no-gutters">
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 bg-primary p-3 p-md-5" data-aos="fade-up" data-aos-delay="">
+            
+
+            <div class="pricing">
+              <span class="icon-paw d-block display-5 text-white mb-3"></span>
+              <h3 class="text-center text-white text-uppercase">Basic</h3>
+              <div class="price text-center mb-4 ">
+                <span><span>$50</span> / year</span>
+              </div>
+              <ul class="list-unstyled ul-check success mb-5">
+                
+                <li>Nail trim + buffing	</li>
+                <li>Teeth brushing	</li>
+                <li class="remove">Ear cleaning	</li>
+                <li class="remove">Face, feet  trim</li>
+                <li class="remove">Flea & tick treatment	</li>
+              </ul>
+              <p class="text-center">
+                <a href="#" class="btn btn-secondary">Buy Now</a>
+              </p>
+            </div>
+
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 bg-dark  p-3 p-md-5" data-aos="fade-up" data-aos-delay="100">
+            <div class="pricing">
+              <span class="icon-paw d-inline-block display-5 text-white mb-3"></span>
+              <span class="icon-paw d-inline-block display-5 text-white mb-3"></span>
+              <h3 class="text-center text-white text-uppercase">Premium</h3>
+              <div class="price text-center mb-4 ">
+                <span><span>$100</span> / year</span>
+              </div>
+              <ul class="list-unstyled ul-check success mb-5">
+			      <li>Full grooming (small dogs)</li>
+
+                 <li>Nail trim + buffing	</li>
+                <li>Teeth brushing	</li>
+                <li >Ear cleaning	</li>
+                <li>Face, feet  trim</li>
+                <li class="remove">Flea & tick treatment	</li>
+              </ul>
+              <p class="text-center">
+                <a href="#" class="btn btn-primary">Buy Now</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-6 col-lg-4 bg-primary  p-3 p-md-5" data-aos="fade-up" data-aos-delay="200">
+            <div class="pricing">
+              <span class="icon-paw d-inline-block display-5 text-white mb-3"></span>
+              <span class="icon-paw d-inline-block display-5 text-white mb-3"></span>
+              <span class="icon-paw d-inline-block display-5 text-white mb-3"></span>
+              <h3 class="text-center text-white text-uppercase">Professional</h3>
+              <div class="price text-center mb-4 ">
+                <span><span>$200</span> / year</span>
+              </div>
+              <ul class="list-unstyled ul-check success mb-5">
+                
+                <li>Full grooming (large dogs)</li>
+
+                 <li>Nail trim + buffing	</li>
+                <li>Teeth brushing	</li>
+                <li >Ear cleaning	</li>
+                <li>Face, feet  trim</li>
+                <li>Flea & tick treatment	</li>
+				 <li>Paw balm		</li>
+                <li>BLueberry facial	</li>
+
+              </ul>
+              <p class="text-center">
+                <a href="#" class="btn btn-secondary">Buy Now</a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="site-section" id="faq-section">
+      <div class="container" id="accordion">
+        <div class="row justify-content-center" data-aos="fade-up">
+          <div class="col-lg-6 text-center heading-section mb-5">
+            
+            <h2 class="text-black mb-2">Frequently Ask Questions</h2>
+            <p>	
+Every day our doctors and staff get asked questions by caring pet owners wanting to know more about our clinic and how to best take care of their pets. We've made this FAQ's list to include questions that we get about pets as well as questions that we get about our pet clinics          </div>
+        </div>
+        <div class="row accordion justify-content-center block__76208">
+          <div class="col-lg-6 order-lg-1 mb-5 mb-lg-0" data-aos="fade-up"  data-aos-delay="">
+            <img src="{{url_for('static', filename='images/dog_5.jpg')}}" alt="Image" class="img-fluid rounded">
+          </div>
+          <div class="col-lg-5 ml-auto order-lg-2 align-self-center" data-aos="fade-up"  data-aos-delay="100">
+            <div class="accordion-item">
+              <h3 class="mb-0 heading">
+                <a class="btn-block" data-toggle="collapse" href="#collapseFive" role="button" aria-expanded="true" aria-controls="collapseFive">Is it really necessary to bring my dog and/or cat in for a yearly comprehensive exam?<span class="icon"></span></a>
+              </h3>
+              <div id="collapseFive" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="body-text">
+                  <p>Comprehensive examinations are recommended AT LEAST annually to check for health issues that may not be apparent to owners. During a comprehensive examination the veterinarian will examine your pet's eyes, ears, skin and hair coat, listen to their heart, and discuss any concerns you may have</p>
+                </div>
+              </div>
+            </div> <!-- .accordion-item -->
+
+            <div class="accordion-item">
+              <h3 class="mb-0 heading">
+                <a class="btn-block" data-toggle="collapse" href="#collapseSix" role="button" aria-expanded="false" aria-controls="collapseSix">Where do I take my pet in case of emergency?
+  <span class="icon"></span></a>
+              </h3>
+              <div id="collapseSix" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="body-text">
+                  <p>If there is an emergency during business hours, simply call our closest location ahead of time so we know what to expect and bring your pet in. If there is an emergency after hours, please take your pet to the North Houston Veterinary Specialist and 24 hour emergency clinic. Click here for a map to their location. </p>
+                </div>
+              </div>
+            </div> <!-- .accordion-item -->
+
+            <div class="accordion-item">
+              <h3 class="mb-0 heading">
+                <a class="btn-block" data-toggle="collapse" href="#collapseSeven" role="button" aria-expanded="false" aria-controls="collapseSeven">We just found a stray pet. What should we do?
+ <span class="icon"></span></a>
+              </h3>
+              <div id="collapseSeven" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="body-text">
+                  <p>Check the pet for collar/tags. If none present, feel free to drop by one of our offices to check the pet for a microchip. If no microchip is present, it is recommended that the pet be kept safe while you look for signs in the area found and post on/check websites</p>
+                </div>
+              </div>
+            </div> <!-- .accordion-item -->
+
+            <div class="accordion-item">
+              <h3 class="mb-0 heading">
+                <a class="btn-block" data-toggle="collapse" href="#collapseEight" role="button" aria-expanded="false" aria-controls="collapseEight">What types of animals do you see?
+<span class="icon"></span></a>
+              </h3>
+              <div id="collapseEight" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                <div class="body-text">
+                  <p>welcomes all breeds of cats and dogs </p>
+                </div>
+              </div>
+            </div> <!-- .accordion-item -->
+
+          </div>
+
+          
+        </div>
+      </div>
+    </section>
+
+    <section class="site-section bg-light block-13" id="testimonials-section" data-aos="fade">
+      <div class="container">
+        <p>Reviews To do</p>
+      </div>
+    </section>
+
+    
+
+
+    <section class="site-section" id="blog-section">
+      <div class="container">
+        <p>Blogs To do</p>
+      </div>
+    </section>
+
+
+
+    <section class="site-section " id="services-section">
+      <div class="container">
+        <div class="row justify-content-center" data-aos="fade-up">
+          <div class="col-lg-6 text-center heading-section mb-5">
+            
+
+  
+            <h2 class="text-black mb-2">Our Services</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up" data-aos-delay="">
+            
+            <div class="block_service">
+              <span class="icon-paw d-block display-3 text-primary mb-3"></span>
+              <h3>Checkup</h3>
+              <p>Vets suggest twice-yearly checkups for older pets. Your cat or dog will get vaccinations when needed and will get a thorough physical exam, along with tests to follow up on any problems. Blood and urine tests can give your vet the scoop on your pet's kidney and liver health, thyroid hormone levels, and more.</p>
+            </div>
+
+          </div>
+          <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="100">
+            <div class="block_service">
+              <span class="icon-paw d-block display-3 text-primary mb-3"></span>
+              <h3>Dermatology</h3>
+              <p>Pet Dermatology provides expert skin, ear, and allergy care for animals. </p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="200">
+            <div class="block_service">
+              <span class="icon-paw d-block display-3 text-primary mb-3"></span>
+              <h3>Adoptions</h3>
+              <p>Pet adoption is the process of taking responsibility for a pet that a previous owner has abandoned or released to a shelter or rescue organization. Common sources for adoptable pets are animal shelters and rescue groups.</p>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="">
+            
+            <div class="block_service">
+              <span class="icon-paw d-block display-3 text-primary mb-3"></span>
+              <h3>First Aid</h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. </p>
+            </div>
+
+          </div>
+          <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="100">
+            <div class="block_service">
+              <span class="icon-paw d-block display-3 text-primary mb-3"></span>
+              <h3>Pet Grooming, Sitting and Walking</h3>
+              <p>Pet first aid refers to emergency treatment administered to an injured or sick domestic animal before professional medical care is available. Much of the first aid administered to pets is similar to that administered to humans, but with some distinct differences, specifically when referring to their anatomy.</p>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4 col-lg-4" data-aos="fade-up"  data-aos-delay="200">
+            <div class="block_service">
+              <span class="icon-paw d-block display-3 text-primary mb-3"></span>
+              <h3>Expert Veterinarian</h3>
+              <p>We have qualified  medical people to treat diseased or injured animals.</p>
+            </div>
+          </div>
+            
+        </div>
+      </div>
+    </section>
+
+    
+    
+    <section class="bg-light" id="contact-section">
+      <div class="container">
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <form action="#" class="p-5 contact-form">
+              
+              <h2 class="h4 mb-5 heading">Contact Form</h2> 
+
+              <div class="row form-group">
+                <div class="col-md-6 mb-3 mb-md-0">
+                  <label for="fname">First Name</label>
+                  <input type="text" id="fname" class="form-control">
+                </div>
+                <div class="col-md-6">
+                  <label for="lname">Last Name</label>
+                  <input type="text" id="lname" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                
+                <div class="col-md-12">
+                  <label for="email">Email</label> 
+                  <input type="email" id="email" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                
+                <div class="col-md-12">
+                  <label for="subject">Subject</label> 
+                  <input type="subject" id="subject" class="form-control">
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <label for="message">Message</label> 
+                  <textarea name="message" id="message" cols="30" rows="7" class="form-control" placeholder="Write your notes or questions here..."></textarea>
+                </div>
+              </div>
+
+              <div class="row form-group">
+                <div class="col-md-12">
+                  <input type="submit" value="Send Message" class="btn btn-dark btn-md text-white">
+                </div>
+              </div>
+
+  
+            </form>
+          </div>
+          <div class="col-lg-6">
+            <div class="row justify-content-center align-items-center h-100">
+              <div class="col-lg-6 text-center heading-section mb-5 align-self-center">
+                
+                <h2 class=" mb-5 text-black">Contact Us</h2>
+                <ul class="list-unstyled text-left address">
+                  <li>
+                    <span class="d-block">Address:</span>
+                    <p>Melbourne St,South Birbane 4101 Austraila</p>
+                  </li>
+                  <li>
+                    <span class="d-block">Phone:</span>
+                    <p>+(000) 123 4567 89</p>
+                  </li>
+                  <li>
+                    <span class="d-block">Email:</span>
+                    <p>info@yourdomain.com</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-9">
+            <div class="row">
+              <div class="col-md-5">
+                <h2 class="footer-heading mb-4">About Us</h2>
+                <p>We are there for your pet</p>
+              </div>
+              <div class="col-md-3 ml-auto">
+                <h2 class="footer-heading mb-4">Quick Links</h2>
+                <ul class="list-unstyled">
+                  <li><a href="#about-section" class="smoothscroll">About Us</a></li>
+				  <li><a href="#checkbreed-section" class="smoothscroll">Check Breed</a></li>
+
+                  <li><a href="#trainers-section" class="smoothscroll">Trainers</a></li>
+                  <li><a href="#services-section" class="smoothscroll">Services</a></li>
+                  <li><a href="#testimonials-section" class="smoothscroll">Testimonials</a></li>
+                  <li><a href="#contact-section" class="smoothscroll">Contact Us</a></li>
+                </ul>
+              </div>
+              <div class="col-md-3">
+                <h2 class="footer-heading mb-4">Follow Us</h2>
+                <a href="#" class="pl-0 pr-3 social-link"><span class="icon-facebook"></span></a>
+                <a href="#" class="pl-3 pr-3 social-link"><span class="icon-twitter"></span></a>
+                <a href="#" class="pl-3 pr-3 social-link"><span class="icon-instagram"></span></a>
+                <a href="#" class="pl-3 pr-3 social-link"><span class="icon-linkedin"></span></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <h2 class="footer-heading mb-4">Subscribe Newsletter</h2>
+            <form action="#" method="post" class="footer-subscribe">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control border-secondary text-white bg-transparent" placeholder="Enter Email" aria-label="Enter Email" aria-describedby="button-addon2">
+                <div class="input-group-append">
+                  <button class="btn btn-primary text-black" type="button" id="button-addon2">Send</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row pt-5 mt-5 text-center">
+          <div class="col-md-12">
+            <div class="border-top pt-5">
+              
+        
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </footer>
+
+  </div> <!-- .site-wrap -->
+
+  <script src="{{url_for('static', filename='js/jquery-3.3.1.min.js')}}"></script>
+    <script src="{{url_for('static', filename='js/custom.js')}}"></script>
+
+  <script src="{{url_for('static', filename='js/jquery-ui.js')}}"></script>
+  <script src="{{url_for('static', filename='js/popper.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/bootstrap.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/owl.carousel.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/jquery.countdown.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/jquery.easing.1.3.js')}}"></script>
+  <script src="{{url_for('static', filename='js/aos.js')}}"></script>
+  <script src="{{url_for('static', filename='js/jquery.fancybox.min.js')}}"></script>
+  <script src="{{url_for('static', filename='js/jquery.sticky.js')}}"></script>
+  <script src="{{url_for('static', filename='js/isotope.pkgd.min.js')}}"></script>
+
+  
+  <script src="{{url_for('static', filename='js/main.js')}}"></script>
+
+  
+  </body>
+</html>

@@ -1,0 +1,22 @@
+
+
+<img class="file-upload-image" src="{{url_for('static', filename=imagepath)}}" alt="your image" />
+<div class="image-title-wrap">
+</div>
+
+				
+{% for key,value in data.items() %}
+		
+<table class="table">
+		
+		{% for k,v in value.items() %}
+		<tr> 
+		<td> {{k}}</td>
+
+		<td> {{v}}</td>
+		</tr>
+						{% endfor %}	 
+
+	
+	</table>
+		{% endfor %}	 
