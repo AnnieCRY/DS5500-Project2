@@ -1,10 +1,11 @@
-
+<h1>Its a {{category}} </h1>
 
 <img class="file-upload-image" src="{{url_for('static', filename=imagepath)}}" alt="your image" />
 <div class="image-title-wrap">
 </div>
 
-				
+<h1>Model predicted : {{breedname}}</h1>	
+<h2>Information table</h2>			
 {% for key,value in data.items() %}
 		
 <table class="table">

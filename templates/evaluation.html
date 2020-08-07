@@ -1,0 +1,66 @@
+  
+{% extends 'base.html' %}
+
+{% block content %}
+<h3><mark>Exploratory Data Analysis</mark></h3>
+
+<div class ="container">
+<div class = "panel-group" id = "accordion">
+
+    {% for key, value in plot_mpl.items() %}
+    {% set count = loop.index %}
+    <!-- muliple plot -->
+    {% if 'AUC_ROC'  in key  %}
+
+    <div class = "panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                {% set ids = "#collapse" + count|string %}
+                <h3><a data-toggle="collapse" data-parent = "#accordion" href = {{ids}}> {{key}} </a></h3>
+            </h4>    
+        </div>
+        {% set ids = "collapse" + count|string %}
+
+        <div class = "panel-collapse " id={{ids}}>
+            {% set plotly_ids = "scatter" + count|string %}
+
+            <div  class = "panel-body" id={{plotly_ids}}>
+            {% set url = "data:image/png;base64," + value %}
+            <img src = {{url}} height = "100%" width="100%">
+            </div>
+        </div>
+    </div>
+    {% else %}
+    
+    <div class = "panel panel-default">
+        <div class="panel-heading">
+            <h4 class="panel-title">
+                {% set ids = "#collapse" + count|string %}
+                <h3><a data-toggle="collapse" data-parent = "#accordion" href = {{ids}}> {{key}} </a></h3>
+            </h4>    
+        </div>
+        {% set ids = "collapse" + count|string %}
+
+        <div class = "panel-collapse" id={{ids}}>
+            {% set plotly_ids = "scatter" + count|string %}
+
+            <div  class = "panel-body" id={{plotly_ids}}>
+
+            <script src = "https://cdn.plot.ly/plotly-latest.min.js"></script>
+            <script type = "text/javascript">
+                var datas = {{value | safe}};
+                Plotly.plot("{{plotly_ids}}", datas, {});
+            </script>
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+        {% endfor %}
+   
+</div>
+</div>
+
+
+
+{% endblock content %}

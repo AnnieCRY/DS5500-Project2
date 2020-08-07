@@ -1,0 +1,57 @@
+<div class="image-title-wrap">
+</div>
+
+<h2>Information table</h2>
+<table class="table">
+
+    {% if category == 'dog' %}
+    <thead>
+        <th>Breed name</th>
+      
+        <th>Weight in Kg</th>
+        <th>Temperament</th>
+        <th>Avg price</th>
+        <th>Popularity US</th>
+
+     </thead>  			
+{% for ind in data.index %}
+		
+<tr> 
+    <td> {{data['BreedName'][ind]}}</td>
+    <td> {{data['MaleWtKg'][ind]}}</td>
+    <td> {{data['Temperment'][ind]}}</td>
+    <td> {{data['AvgPupPrice'][ind]}}</td>
+    <td> {{data['PopularityUS2017'][ind]}}</td>
+
+           </tr>
+
+           {% endfor %}	 
+    {% endif %}
+    
+
+    {% if category == 'cat' %}
+    <thead>
+        <th>Breed name</th>
+        <th>Fur</th>
+        <th>Weight in Kg</th>
+        <th>Temperament</th>
+        <th>Avg price</th>
+        <th>Popularity US </th>
+
+     </thead>  			
+{% for ind in data.index %}
+		
+<tr> 
+    <td> {{data['BreedName'][ind]}}</td>
+    <td> {{data['Fur'][ind]}}</td>
+
+    <td> {{data['MaleWtKg'][ind]}}</td>
+    <td> {{data['Temperment'][ind]}}</td>
+    <td> {{data['AvgKittenPrice'][ind]}}</td>
+    <td> {{data['PopularityUS2017'][ind]}}</td>
+
+           </tr>
+
+           {% endfor %}	 
+	{% endif %}
+	</table>

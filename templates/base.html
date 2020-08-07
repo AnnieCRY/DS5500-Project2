@@ -1,0 +1,58 @@
+{% extends 'abstract_base.html' %}
+{% block title%} Auto Access to Employees {% endblock title%}
+{% block styles%}
+<link rel = "stylesheet" href = "https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
+<link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+<link rel = "stylesheet" href = "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel = "stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/bootstrap-table/1.16.0/bootstrap-table.min.js" />
+
+{% endblock styles%}
+
+{% block scripts%}
+
+
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src = "https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"> </script>
+<script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+<script src = "https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.min.js"></script>
+
+
+<script>
+$('#dtBasicExample').DataTable({
+  "oLanguage" : {"sSearch" : ""}, 
+  "iDisplayLength": 50
+  // "order":[[2, "desc"]]
+});
+</script>
+
+{% endblock scripts %}
+
+{% block navbar%}
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="/">Auto Access To Resources</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="/train">Train Data Set<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/evaluation">Model and Evaluation</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Plots and Results
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="/model_eda">Exploratory data Analysis</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+{% endblock navbar%}
